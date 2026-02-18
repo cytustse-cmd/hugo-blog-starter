@@ -1,16 +1,31 @@
-# Hugo + PaperMod 双语博客模板
+<div align="center">
 
-> 📖 Also available in [English](README.md)
+<img width="1500" height="400" alt="Hugo 博客模板" src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=1500&h=400&fit=crop" />
 
-一个开箱即用的静态博客模板，支持中英双语，部署于 Vercel 平台。
+<br/>
+<br/>
+
+**一个开箱即用的 Hugo + PaperMod 双语博客模板，支持中英双语。**
+
+[![Hugo](https://img.shields.io/badge/Hugo-0.139.0-blue?style=flat-square)](https://gohugo.io)
+[![PaperMod](https://img.shields.io/badge/PaperMod-7.0-blue?style=flat-square)](https://github.com/adityatelange/hugo-PaperMod)
+[![License](https://img.shields.io/badge/License-CC%20BY--NC%204.0-blue?style=flat-square)](LICENSE)
+[![Deploy](https://img.shields.io/badge/Deploy-Vercel-brightgreen?style=flat-square)](https://vercel.com)
+
+</div>
+
+---
 
 ## ✨ 特性
 
-- **Hugo + PaperMod**：轻量、简洁、响应式设计
-- **双语支持**：中英文文章并排显示
-- **自动化 Vercel 部署**：免费托管，代码推送后自动部署
-- **搜索与归档**：内置搜索功能及归档页面
-- **暗黑主题**：默认暗黑模式，无需手动切换
+| 特性 | 说明 |
+|------|------|
+| **Hugo + PaperMod** | 轻量、简洁、响应式设计 |
+| **双语支持** | 中英文文章并排显示 |
+| **自动化部署** | 免费托管，代码推送后自动部署 |
+| **搜索与归档** | 内置搜索功能及归档页面 |
+| **暗黑主题** | 默认暗黑模式，无需手动切换 |
+| **双语模板** | 自定义中英双语文章布局 |
 
 ---
 
@@ -96,45 +111,25 @@ baseURL = "https://your-domain.vercel.app/"
 
 ## 🛠️ 常见问题排查
 
-### ❌ 避免使用 config.toml
+| 问题 | 解决方案 |
+|------|----------|
+| **config.toml 冲突** | Hugo 优先读取 `config.toml`，如无需用请删除或重命名 |
+| **主题渲染异常** | 运行 `hugo --themesDir .` 或检查 `hugo.toml` 中的 `theme` 配置 |
+| **Vercel 404** | 确认 Build Command 为 `hugo`，Output Directory 为 `public` |
+| **文章无法显示** | 设置 `draft: false`，检查 `content/` 目录结构 |
 
-Hugo 会优先读取 `config.toml` 文件，导致覆盖 `hugo.toml` 配置。如无需使用主题默认配置，请删除或重命名 `config.toml`。
-
-### ❌ 使用 Git Submodule 管理主题
+### 使用 Git Submodule 管理主题
 
 ```bash
 git submodule add https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod
 ```
 
-不建议直接克隆主题目录，此方式会增加后续更新维护的复杂性。
-
-### ✅ 启用 Markdown 内嵌 HTML
-
-在 `[markup]` 部分添加以下配置：
+### 启用 Markdown 内嵌 HTML
 
 ```toml
 [markup.goldmark.renderer]
   unsafe = true
 ```
-
-### ✅ 本地主题渲染异常
-
-```bash
-hugo --themesDir .
-```
-
-或检查 `hugo.toml` 中的 `theme = "PaperMod"` 配置是否正确。
-
-### ✅ Vercel 部署后显示 404
-
-- 确认 **Build Command** 设置为 `hugo`（而非 `hugo server`）
-- 确认 **Output Directory** 设置为 `public`
-- 检查项目根目录是否存在 `vercel.json` 文件
-
-### ✅ 文章无法显示
-
-- 设置 `draft: false` 或删除 `draft` 字段
-- 检查 `content/` 目录结构是否正确
 
 ---
 
@@ -144,7 +139,7 @@ hugo --themesDir .
 hugo-blog-starter/
 ├── content/           # 内容目录
 │   └── posts/         # 博客文章
-├── layouts/           # 自定义模板（双语）
+├── layouts/           # 自定义模板
 ├── archetypes/        # 内容模板
 ├── hugo.toml         # 配置文件
 ├── vercel.json       # Vercel 配置

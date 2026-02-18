@@ -10,7 +10,7 @@
 
 ---
 
-## ✨ Features
+## Features
 
 | Feature | Description |
 |---------|-------------|
@@ -23,7 +23,7 @@
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Clone the Template
 
@@ -59,7 +59,7 @@ hugo server
 
 ---
 
-## 📝 Writing Posts
+## Writing Posts
 
 ```bash
 hugo new posts/your-post-title.md
@@ -87,7 +87,7 @@ Your English content here...
 
 ---
 
-## ⚙️ Configuration
+## Configuration
 
 ### Basic Information (hugo.toml)
 
@@ -103,7 +103,7 @@ Modify the `[menu]` section in `hugo.toml` to customize navigation links.
 
 ---
 
-## 🛠️ Troubleshooting
+## Troubleshooting
 
 | Issue | Solution |
 |-------|----------|
@@ -127,7 +127,7 @@ git submodule add https://github.com/adityatelange/hugo-PaperMod.git themes/Pape
 
 ---
 
-## 📦 Directory Structure
+## Directory Structure
 
 ```
 hugo-blog-starter/
@@ -142,7 +142,7 @@ hugo-blog-starter/
 
 ---
 
-## 🤖 AI-Assisted Blog Maintenance
+## AI-Assisted Blog Maintenance
 
 This template supports AI-assisted maintenance:
 
@@ -154,6 +154,6 @@ Learn more at [OpenClaw](https://github.com/openclaw/openclaw)
 
 ---
 
-## 📄 License
+## License
 
 [CC BY-NC 4.0](LICENSE) - Attribution + Non-Commercial

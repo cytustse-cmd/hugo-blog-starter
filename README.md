@@ -1,27 +1,29 @@
-# Hugo + PaperMod 双语博客模板
+# Hugo + PaperMod Bilingual Blog Template
 
-一个开箱即用的静态博客模板，支持中英双语，部署到 Vercel。
+> 📖 Also available in [简体中文](README.zh.md)
 
-## ✨ 特性
+A ready-to-use static blog template with Chinese-English bilingual support, deployed on Vercel.
 
-- **Hugo + PaperMod**：快速、简洁、响应式
-- **双语支持**：中英文章并排显示
-- **Vercel 一键部署**：免费托管，自动更新
-- **Search + Archive**：内置搜索和归档页面
-- **暗黑主题**：默认暗黑，无需切换
+## ✨ Features
+
+- **Hugo + PaperMod**: Fast, clean, responsive
+- **Bilingual Support**: Chinese and English articles displayed side by side
+- **One-Click Vercel Deploy**: Free hosting, auto-deploy on push
+- **Search + Archive**: Built-in search and archive pages
+- **Dark Mode**: Default dark, no toggle needed
 
 ---
 
-## 🚀 快速开始
+## 🚀 Quick Start
 
-### 1. 克隆模板
+### 1. Clone the Template
 
 ```bash
-git clone https://github.com/你的用户名/hugo-blog-starter.git my-blog
+git clone https://github.com/your-username/hugo-blog-starter.git my-blog
 cd my-blog
 ```
 
-### 2. 安装 Hugo
+### 2. Install Hugo
 
 ```bash
 # Mac
@@ -31,30 +33,30 @@ brew install hugo
 sudo apt install hugo
 ```
 
-### 3. 本地预览
+### 3. Local Preview
 
 ```bash
 hugo server
-# 访问 http://localhost:1313
+# Visit http://localhost:1313
 ```
 
-### 4. 部署到 Vercel
+### 4. Deploy to Vercel
 
-1. 把仓库推到 GitHub
-2. 去 [vercel.com](https://vercel.com) 导入 GitHub 仓库
+1. Push repo to GitHub
+2. Go to [vercel.com](https://vercel.com) → Import GitHub repo
 3. **Build Command**: `hugo`
 4. **Output Directory**: `public`
 5. Deploy!
 
 ---
 
-## 📝 写文章
+## 📝 Writing Posts
 
 ```bash
-hugo new posts/你的文章标题.md
+hugo new posts/your-post-title.md
 ```
 
-文章模板：
+Post template:
 
 ```markdown
 ---
@@ -76,97 +78,93 @@ Your English content here...
 
 ---
 
-## ⚙️ 配置修改
+## ⚙️ Configuration
 
-### 基本信息 (hugo.toml)
+### Basic Info (hugo.toml)
 
 ```toml
-title = "你的博客标题"
-author = "你的名字"
-baseURL = "https://你的域名.vercel.app/"
+title = "Your Blog Title"
+author = "Your Name"
+baseURL = "https://your-domain.vercel.app/"
 ```
 
-### 菜单配置
+### Menu
 
-在 `hugo.toml` 中修改 `[menu]` 部分。
+Modify `[menu]` section in `hugo.toml`.
 
 ---
 
-## 🛠️ 常见问题 (血泪教训)
+## 🛠️ Common Issues (Lessons Learned)
 
-### ❌ 不要用 config.toml
+### ❌ Don't Use config.toml
 
-Hugo 会优先读取 `config.toml`，会覆盖 `hugo.toml`！
-如果不用主题自带配置，直接删掉或改名。
+Hugo prioritizes `config.toml` over `hugo.toml`! 
+If you don't need theme's default config, delete or rename it.
 
-### ❌ themes 要用 submodule
+### ❌ Use Submodule for Themes
 
 ```bash
 git submodule add https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod
 ```
 
-不要直接 clone，否则更新麻烦。
+Don't clone directly, otherwise updates are painful.
 
-### ✅ Markdown 里用 HTML
+### ✅ Enable HTML in Markdown
 
-需要在 `[markup]` 开启：
+Add to `[markup]`:
 
 ```toml
 [markup.goldmark.renderer]
   unsafe = true
 ```
 
-### ✅ 本地调试主题不生效？
+### ✅ Theme Not Working Locally?
 
 ```bash
 hugo --themesDir .
 ```
 
-或者检查 `hugo.toml` 里的 `theme = "PaperMod"` 是否正确。
+Or check `theme = "PaperMod"` in `hugo.toml`.
 
-### ✅ Vercel 部署404？
+### ✅ Vercel 404 Error?
 
-- 检查 Build Command 是 `hugo`（不是 `hugo server`）
-- Output Directory 是 `public`
-- 确认 `vercel.json` 存在
+- Build Command: `hugo` (not `hugo server`)
+- Output Directory: `public`
+- Make sure `vercel.json` exists
 
-### ✅ 文章没显示？
+### ✅ Posts Not Showing?
 
-- `draft: false` 或者删掉 draft 字段
-- `content/` 目录结构要正确
+- Set `draft: false` or remove draft field
+- Check `content/` directory structure
 
 ---
 
-## 📦 目录结构
+## 📦 Directory Structure
 
 ```
 hugo-blog-starter/
-├── content/           # 文章目录
-│   └── posts/         # 博客文章
-├── layouts/           # 自定义模板 (双语)
-├── archetypes/        # 文章模板
-├── hugo.toml         # 配置文件
-├── vercel.json       # Vercel 配置
-└── themes/           # 主题 (submodule)
+├── content/           # Posts directory
+│   └── posts/         # Blog posts
+├── layouts/           # Custom templates (bilingual)
+├── archetypes/        # Post templates
+├── hugo.toml         # Config file
+├── vercel.json       # Vercel config
+└── themes/           # Theme (submodule)
 ```
 
 ---
 
-## 🤖 用 AI 维护博客
+## 🤖 Maintain with AI
 
-这个模板可以用 AI 辅助维护：
-- AI 帮你写文章草稿
-- AI 检查语法
-- AI 生成摘要
+This template can be maintained with AI assistance:
+- AI drafts posts
+- AI checks grammar
+- AI generates summaries
 
-详见 [OpenClaw](https://github.com/openclaw/openclaw)
-
----
-
-## 📄 许可证
-
-[CC BY-NC 4.0](LICENSE) - 署名 + 非商用
+See [OpenClaw](https://github.com/openclaw/openclaw)
 
 ---
 
-## 🤖 用 AI 维护博客
+## 📄 License
+
+[CC BY-NC 4.0](LICENSE) - Attribution + Non-Commercial

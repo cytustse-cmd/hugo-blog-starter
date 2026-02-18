@@ -1,5 +1,7 @@
 <div align="center">
 
+> Also available in [简体中文](README.zh.md)
+
 **Create your personal blog in minutes. A production-ready Hugo + PaperMod blog template with Chinese-English bilingual support.**
 
 [![Hugo](https://img.shields.io/badge/Hugo-0.139.0-blue?style=flat-square)](https://gohugo.io)

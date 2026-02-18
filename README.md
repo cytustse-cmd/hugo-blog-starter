@@ -1,6 +1,6 @@
 <div align="center">
 
-<img width="1500" height="400" alt="Hugo Blog Template" src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=1500&h=400&fit=crop" />
+<img width="1500" height="400" alt="Hugo Blog Template" src="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=1500&h=400&fit=crop" />
 
 <br/>
 <br/>

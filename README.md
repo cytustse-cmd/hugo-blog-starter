@@ -2,15 +2,15 @@
 
 > 📖 Also available in [简体中文](README.zh.md)
 
-A ready-to-use static blog template with Chinese-English bilingual support, deployed on Vercel.
+A production-ready static blog template with Chinese-English bilingual support, deployed on Vercel.
 
 ## ✨ Features
 
-- **Hugo + PaperMod**: Fast, clean, responsive
-- **Bilingual Support**: Chinese and English articles displayed side by side
-- **One-Click Vercel Deploy**: Free hosting, auto-deploy on push
-- **Search + Archive**: Built-in search and archive pages
-- **Dark Mode**: Default dark, no toggle needed
+- **Hugo + PaperMod**: Fast, lightweight, and responsive design
+- **Bilingual Support**: Side-by-side Chinese and English article display
+- **Automated Vercel Deployment**: Free hosting with automatic deployment on code push
+- **Search + Archive**: Integrated search functionality and archive pages
+- **Dark Mode**: Default dark theme, no manual toggle required
 
 ---
 
@@ -26,7 +26,7 @@ cd my-blog
 ### 2. Install Hugo
 
 ```bash
-# Mac
+# macOS
 brew install hugo
 
 # Linux
@@ -42,11 +42,11 @@ hugo server
 
 ### 4. Deploy to Vercel
 
-1. Push repo to GitHub
-2. Go to [vercel.com](https://vercel.com) → Import GitHub repo
-3. **Build Command**: `hugo`
-4. **Output Directory**: `public`
-5. Deploy!
+1. Push the repository to GitHub
+2. Navigate to [vercel.com](https://vercel.com) and import the GitHub repository
+3. Configure **Build Command**: `hugo`
+4. Configure **Output Directory**: `public`
+5. Click **Deploy**
 
 ---
 
@@ -80,7 +80,7 @@ Your English content here...
 
 ## ⚙️ Configuration
 
-### Basic Info (hugo.toml)
+### Basic Information (hugo.toml)
 
 ```toml
 title = "Your Blog Title"
@@ -88,54 +88,53 @@ author = "Your Name"
 baseURL = "https://your-domain.vercel.app/"
 ```
 
-### Menu
+### Navigation Menu
 
-Modify `[menu]` section in `hugo.toml`.
+Modify the `[menu]` section in `hugo.toml` to customize navigation links.
 
 ---
 
-## 🛠️ Common Issues (Lessons Learned)
+## 🛠️ Troubleshooting
 
-### ❌ Don't Use config.toml
+### ❌ Avoid Using config.toml
 
-Hugo prioritizes `config.toml` over `hugo.toml`! 
-If you don't need theme's default config, delete or rename it.
+Hugo prioritizes `config.toml` over `hugo.toml`. If the theme's default configuration is not required, delete or rename `config.toml` to prevent conflicts.
 
-### ❌ Use Submodule for Themes
+### ❌ Use Git Submodule for Themes
 
 ```bash
 git submodule add https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod
 ```
 
-Don't clone directly, otherwise updates are painful.
+Direct cloning is not recommended, as it complicates update management.
 
 ### ✅ Enable HTML in Markdown
 
-Add to `[markup]`:
+Add the following to the `[markup]` section:
 
 ```toml
 [markup.goldmark.renderer]
   unsafe = true
 ```
 
-### ✅ Theme Not Working Locally?
+### ✅ Theme Not Rendering Locally
 
 ```bash
 hugo --themesDir .
 ```
 
-Or check `theme = "PaperMod"` in `hugo.toml`.
+Alternatively, verify that `theme = "PaperMod"` is correctly set in `hugo.toml`.
 
-### ✅ Vercel 404 Error?
+### ✅ Vercel Deployment Returns 404
 
-- Build Command: `hugo` (not `hugo server`)
-- Output Directory: `public`
-- Make sure `vercel.json` exists
+- Ensure **Build Command** is set to `hugo` (not `hugo server`)
+- Ensure **Output Directory** is set to `public`
+- Verify that `vercel.json` exists in the project root
 
-### ✅ Posts Not Showing?
+### ✅ Posts Not Displayed
 
-- Set `draft: false` or remove draft field
-- Check `content/` directory structure
+- Set `draft: false` or remove the `draft` field entirely
+- Verify that the `content/` directory structure is correct
 
 ---
 
@@ -143,25 +142,26 @@ Or check `theme = "PaperMod"` in `hugo.toml`.
 
 ```
 hugo-blog-starter/
-├── content/           # Posts directory
+├── content/           # Content directory
 │   └── posts/         # Blog posts
-├── layouts/           # Custom templates (bilingual)
-├── archetypes/        # Post templates
-├── hugo.toml         # Config file
-├── vercel.json       # Vercel config
-└── themes/           # Theme (submodule)
+├── layouts/           # Custom layout templates (bilingual)
+├── archetypes/        # Content archetypes
+├── hugo.toml         # Configuration file
+├── vercel.json       # Vercel configuration
+└── themes/           # Theme directory (submodule)
 ```
 
 ---
 
-## 🤖 Maintain with AI
+## 🤖 AI-Assisted Blog Maintenance
 
-This template can be maintained with AI assistance:
-- AI drafts posts
-- AI checks grammar
-- AI generates summaries
+This template supports AI-assisted maintenance:
 
-See [OpenClaw](https://github.com/openclaw/openclaw)
+- AI-generated post drafts
+- Grammar and style checking
+- Automated summary generation
+
+Learn more at [OpenClaw](https://github.com/openclaw/openclaw)
 
 ---
 

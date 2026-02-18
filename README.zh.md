@@ -1,6 +1,6 @@
 <div align="center">
 
-**一个开箱即用的 Hugo + PaperMod 双语博客模板，支持中英双语。**
+**分钟级创建个人博客。一个开箱即用的 Hugo + PaperMod 双语博客模板，支持中英双语。**
 
 [![Hugo](https://img.shields.io/badge/Hugo-0.139.0-blue?style=flat-square)](https://gohugo.io)
 [![PaperMod](https://img.shields.io/badge/PaperMod-7.0-blue?style=flat-square)](https://github.com/adityatelange/hugo-PaperMod)

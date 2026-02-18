@@ -1,6 +1,6 @@
 <div align="center">
 
-**A production-ready Hugo + PaperMod blog template with Chinese-English bilingual support.**
+**Create your personal blog in minutes. A production-ready Hugo + PaperMod blog template with Chinese-English bilingual support.**
 
 [![Hugo](https://img.shields.io/badge/Hugo-0.139.0-blue?style=flat-square)](https://gohugo.io)
 [![PaperMod](https://img.shields.io/badge/PaperMod-7.0-blue?style=flat-square)](https://github.com/adityatelange/hugo-PaperMod)

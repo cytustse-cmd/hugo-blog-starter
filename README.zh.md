@@ -1,8 +1,5 @@
 <div align="center">
 
-<br/>
-<br/>
-
 **一个开箱即用的 Hugo + PaperMod 双语博客模板，支持中英双语。**
 
 [![Hugo](https://img.shields.io/badge/Hugo-0.139.0-blue?style=flat-square)](https://gohugo.io)

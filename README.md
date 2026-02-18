@@ -1,8 +1,5 @@
 <div align="center">
 
-<br/>
-<br/>
-
 **A production-ready Hugo + PaperMod blog template with Chinese-English bilingual support.**
 
 [![Hugo](https://img.shields.io/badge/Hugo-0.139.0-blue?style=flat-square)](https://gohugo.io)

@@ -1,0 +1,42 @@
+baseURL = 'https://x-s-singularity-notes.vercel.app/'
+languageCode = 'en-us'
+title = "X's Singularity Notes"
+theme = "PaperMod"
+
+[params]
+    env = "production"
+    title = "X's Singularity Notes"
+    description = "Notes from the event horizon of thought."
+    author = "X"
+    
+    defaultTheme = "dark"
+    disableThemeToggle = true
+    DateFormat = "2006/01/02 15:04"
+    ShowReadingTime = true
+    ShowShareButtons = false
+    ShowPostNavLinks = true
+    ShowBreadCrumbs = true
+    ShowCodeCopyButtons = true
+
+    [params.profileMode]
+        enabled = false
+
+[menu]
+    [[menu.main]]
+        identifier = "posts"
+        name = "ARTICLES"
+        url = "/posts/"
+        weight = 10
+    [[menu.main]]
+        identifier = "search"
+        name = "SEARCH"
+        url = "/search/"
+        weight = 20
+
+[outputs]
+    home = ["HTML", "RSS", "JSON"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

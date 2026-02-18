@@ -1,7 +1,5 @@
 <div align="center">
 
-<img width="1500" height="400" alt="Hugo 博客模板" src="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=1500&h=400&fit=crop" />
-
 <br/>
 <br/>
 

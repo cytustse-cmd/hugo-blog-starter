@@ -165,4 +165,8 @@ hugo-blog-starter/
 
 ## 📄 许可证
 
-MIT
+[CC BY-NC 4.0](LICENSE) - 署名 + 非商用
+
+---
+
+## 🤖 用 AI 维护博客
